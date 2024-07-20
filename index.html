@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations</title>
+    <style>
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(-50px); }
+            100% { transform: translateY(0); }
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #f5af19, #f12711);
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .message-box {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            animation: slideIn 1s ease-out;
+        }
+
+        .message-box h1 {
+            color: #4CAF50;
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        .message-box p {
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            animation: confettiFall 4s infinite ease-in-out;
+        }
+
+        @keyframes confettiFall {
+            0% { transform: translateY(-100vh); }
+            100% { transform: translateY(100vh); }
+        }
+
+        .confetti:nth-child(1) { left: 10%; background-color: #ff0; animation-delay: 0s; }
+        .confetti:nth-child(2) { left: 20%; background-color: #0f0; animation-delay: 1s; }
+        .confetti:nth-child(3) { left: 30%; background-color: #f0f; animation-delay: 0.5s; }
+        .confetti:nth-child(4) { left: 40%; background-color: #0ff; animation-delay: 0.3s; }
+        .confetti:nth-child(5) { left: 50%; background-color: #00f; animation-delay: 0.7s; }
+        .confetti:nth-child(6) { left: 60%; background-color: #f00; animation-delay: 1.2s; }
+        .confetti:nth-child(7) { left: 70%; background-color: #ff0; animation-delay: 0.9s; }
+        .confetti:nth-child(8) { left: 80%; background-color: #0f0; animation-delay: 1.5s; }
+        .confetti:nth-child(9) { left: 90%; background-color: #f0f; animation-delay: 0.2s; }
+        .confetti:nth-child(10) { left: 100%; background-color: #0ff; animation-delay: 1.7s; }
+    </style>
+</head>
+<body>
+    <div class="message-box">
+        <h1>Hey Annayya!</h1>
+        <p>Congrats on the new job!</p>
+        <p>Thanks for always being there for me and supporting me.</p>
+        <p>You mean a lot to me, and I'm so grateful to have you as my brother!</p>
+    </div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+</body>
+</html>
